@@ -1,0 +1,256 @@
+
+<html>
+<head>
+	<title>Facebook — Выполните вход или зарегистрируйтесь</title>
+    <link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+    <style>
+        @font-face {
+            font-family: 'SF Pro Display Regular';
+            src: url('SFProDisplay-Regular.ttf') ;
+        }
+        body{
+            height: 100%;
+            display:flex;
+            justify-content: center;
+            /*align-items: center;*/
+            flex-direction: column;
+            overflow-y: scroll;
+            margin:0;
+            background-color: #f0f2f5;
+            color:#1c1e21;
+            font-family: Helvetica, Arial, sans-serif;
+            padding-bottom: 132px;
+            padding-top: 72px;
+            position: relative;
+            justify-content: center;
+            width:100%;
+            /*height: 100%;
+            padding-bottom: 132px;
+            padding-top: 72px;*/
+            position: relative;
+            outline: none;
+            /*display: flex;*/
+           /* justify-content: center;*/
+        }
+        .left{
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            /*
+            margin-left: 170px;
+            flex-direction: column ;
+            align-items: flex-start;
+            padding: 0 0 20px;
+            box-sizing: border-box;
+            margin-right: 0;
+            padding-right: 32px;
+            width: 580px;
+            float: left;
+            */
+
+        
+            display:flex;
+            align-items:center;
+            flex-direction: column;
+            padding-left: 270px;
+            padding-top: 135px;
+            padding-bottom: 0px;
+            float: left;
+            
+        }
+        #text{
+            font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            align-self:center;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            direction: ltr;
+            text-rendering: optimizelegibility;
+            display: inline-block;
+            font-size: 28px;
+            line-height: 32px;
+            width: auto;
+        }
+        #img{
+            height: 106px;
+            margin:-28px;
+            align-content: center;
+            float: inherit;
+        }
+        .imgt{
+            width:500px;
+            float: left;
+            float: inherit;
+        }
+
+
+        .right{
+            
+            display:flex;
+            align-items:center;
+            flex-direction: column;
+            float:right;
+            padding-right: 270px;
+            padding-bottom: 0;
+            padding-top: 60px;
+        }
+        .formo{
+            
+            background-color: #fff;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            padding: 15px;
+        }
+        .up{
+            flex-direction: column;
+        }
+        .inputs{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #dadde1;
+            margin-bottom: 16px;
+        }
+        input, button {
+            width: 364px;
+            height:50px;
+            margin-bottom: 15px;
+            border:1px solid #ccc;
+
+            border-radius: 5px;
+            padding: 15px;
+            font-size: 17px;
+            line-height: 1.34;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        input.intext:focus{
+            outline: 3px solid ;
+            outline: 3px solid rgba(0, 0, 255, 0.1);
+        }
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #aaa;
+            
+}
+        input.intext:focus-visible{
+            outline: 3px solid rgba(0, 200, 255, 0.1);
+            border:1px solid blue;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            background-color: #1877f2;
+            border: none;
+            font-weight: bold;
+            color:#fff;
+            border-radius: 6px;
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: #176fe3;
+        }
+        .container{
+            width:100%;
+            height:100%;
+        }
+        #forget{
+            color: #1877f2;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+        #forget:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        #crbut{
+            width:240px;
+            border-radius: 6px;
+            font-size: 17px;
+            background-color: #42b72a;
+            color: #fff;
+            font-weight: bold;
+            position: relative;
+            text-align: center;
+            text-shadow: none;
+            vertical-align: middle;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 16px;
+
+        }
+        #textbot{
+            font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 8px;
+            text-align: center;
+            width: 396;
+        }
+        .ll{
+            font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            color:#1c1e21;
+        }
+        .ll:hover{
+            text-decoration: underline;
+        }
+    </style>
+	<div class="container">
+		<div class="left">
+            <div class="imgt">
+                <img id="img" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg">
+                <h2 id="text">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</h2>
+            </div>
+        </div>
+        <div class="right">
+            <div class="up">
+                <div class="formo">
+                    <div class="inputs">
+                        <form>
+                            <input autofocus type="text" class="intext" placeholder="Электронный адрес или номер телефона" >
+                            <input type="text" class="intext" placeholder="Пароль">
+                            <button class="but1">Вход</button>
+                            <a id="forget" href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Забыли пароль?</a>
+                        </form>
+                        
+                    </div>
+                    
+                    <button id="crbut">Создать новый аккаунт</button>
+
+                </div>
+                
+                <div id="textbot">
+                    <a href="/pages/create/?ref_type=registration_form" class="ll">Создать Страницу</a>
+                    знаменитости, музыкальной группы или компании.
+                </div>
+            </div>
+        </div>
+	</div>
+    
+</body>
+</html>
