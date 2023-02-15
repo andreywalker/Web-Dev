@@ -14,7 +14,6 @@
         body{
             height: 100%;
             display:flex;
-            justify-content: center;
             /*align-items: center;*/
             flex-direction: column;
             overflow-y: scroll;
@@ -204,7 +203,7 @@
             font-weight: 600;
             cursor: pointer;
             text-decoration: none;
-            margin-top: 8px;
+            margin-top: 24px;
             text-align: center;
             width: 396;
         }
@@ -219,6 +218,58 @@
         .ll:hover{
             text-decoration: underline;
         }
+        #fottext{
+
+
+        }
+
+        footer{
+            background-color: #fff;
+            width: auto;
+            margin: auto;
+            position:absolute;
+            bottom: 0;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-left: 250px;
+            padding-right: 250px;
+        }
+        .listLanguages{
+            display:flex;
+            
+            /*align-items: center;*/
+            flex-direction: row;
+            border-bottom: 1px solid #dddfe2;
+            padding-bottom: 15px;
+            
+        }
+        .listLanguages a{
+            text-decoration: none;
+            white-space: nowrap;
+            list-style-type: none;
+            color:#737373;
+
+        }
+        li{
+            display: inline-block;
+            vertical-align: top; 
+            padding-right: 10px;
+            font-size: 12px;
+        }
+        #linkss{
+            width:fit-content;
+            margin-top: auto;
+        }
+        #linkss a{
+            text-decoration: none;
+            white-space: nowrap;
+            list-style-type: none;
+            color:#737373;
+        }
+
+
     </style>
 	<div class="container">
 		<div class="left">
@@ -251,6 +302,59 @@
             </div>
         </div>
 	</div>
+    <footer>
+        <div  id="foottext">
+            <ul class="listLanguages">
+                <li>Русский</li>
+                <li><a class="language" href="https://en-us.facebook.com/" title="Russian">English (US)</a></li>
+                <li><a class="language" href="https://tr-tr.facebook.com/" title="Turkish">Türkçe</a></li>
+                <li><a class="language" href="https://id-id.facebook.com/" title="Indonesian">Bahasa Indonesia</a></li>
+                <li><a class="language" href="https://zh-cn.facebook.com/" title="Simplified Chinese (China)">中文(简体)</a></li>
+                <li><a class="language" href="https://kk-kz.facebook.com/" title="Kazakh">Қазақша</a></li>
+                <li><a class="language" href="https://de-de.facebook.com/" title="German">Deutsch</a></li>
+                <li><a class="language" href="https://ko-kr.facebook.com/" title="Korean">한국어</a></li>
+                <li><a class="language" href="https://sq-al.facebook.com/" title="Albanian">Shqip</a></li>
+                <li><a class="language" href="https://es-la.facebook.com/" title="Spanish">Español</a></li>
+                <li><a class="language" href="https://pt-br.facebook.com/" title="Portuguese (Brazil)">Português (Brasil)</a></li>
+            </ul>
+
+
+
+            <ul id="linkss">
+            <li><a href="/reg/" title="Sign Up for Facebook">Sign Up</a></li>
+            <li><a href="/login/" title="Log into Facebook">Log In</a></li>
+            <li><a href="https://messenger.com/" title="Check out Messenger.">Messenger</a></li>
+            <li><a href="/lite/" title="Facebook Lite for Android.">Facebook Lite</a></li>
+            <li><a href="https://www.facebook.com/watch/" title="Browse our Watch videos.">Watch</a></li>
+            <li><a href="/places/" title="Check out popular places on Facebook.">Places</a></li>
+            <li><a href="/games/" title="Check out Facebook games.">Games</a></li>
+            <li><a href="/marketplace/" title="Buy and sell on Facebook Marketplace.">Marketplace</a></li>
+            <li><a href="https://pay.facebook.com/" title="Learn more about Meta Pay" target="_blank">Meta Pay</a></li>
+            <li><a href="https://www.oculus.com/" title="Learn more about Oculus" target="_blank">Oculus</a></li>
+            <li><a href="https://portal.facebook.com/" title="Learn more about Facebook Portal" target="_blank">Portal</a></li>
+            <li><a href="https://www.instagram.com/" title="Check out Instagram" target="_blank">Instagram</a></li>
+            <li><a href="https://www.bulletin.com/" title="Check out Bulletin Newsletter">Bulletin</a></li>
+            <li><a href="/fundraisers/" title="Donate to worthy causes.">Fundraisers</a></li>
+            <li><a href="/biz/directory/" title="Browse our Facebook Services directory.">Services</a></li>
+            <li><a href="/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D" title="See the Voting Information Center.">Voting Information Center</a></li>
+            <li><a href="/privacy/policy/?entry_point=facebook_page_footer" title="Learn how we collect, use and share information to support Facebook.">Privacy Policy</a></li>
+            <li><a href="/privacy/center/?entry_point=facebook_page_footer" title="Learn how to manage and control your privacy on Facebook.">Privacy Center</a></li>
+            <li><a href="/groups/explore/" title="Explore our Groups.">Groups</a></li>
+            <li><a href="https://about.meta.com/" title="Read our blog, discover the resource center, and find job opportunities.">About</a></li>
+            <li><a href="/ad_campaign/landing.php?placement=pflo&amp;campaign_id=402047449186&amp;nav_source=unknown&amp;extra_1=auto" title="Advertise on Facebook.">Create Ad</a></li>
+            <li><a href="/pages/create/?ref_type=site_footer" title="Create a page">Create Page</a></li>
+            <li><a href="https://developers.facebook.com/?ref=pf" title="Develop on our platform.">Developers</a></li>
+            <li><a href="/careers/?ref=pf" title="Make your next career move to our awesome company.">Careers</a></li>
+            <li><a href="/policies/cookies/" title="Learn about cookies and Facebook.">Cookies</a></li>
+            <li><a href="https://www.facebook.com/help/568137493302217" title="Learn about Ad Choices.">Ad choices</a></li>
+            <li><a href="/policies?ref=pf" title="Review our terms and policies.">Terms</a></li>
+            <li><a href="/help/?ref=pf" title="Visit our Help Center.">Help</a></li>
+            <li><a href="help/637205020878504" title="Visit our Contact Uploading &amp; Non-Users Notice.">Contact Uploading &amp; Non-Users</a></li>
+            <li><a href="/settings" title="View and edit your Facebook settings.">Settings</a></li>
+            <li><a href="/allactivity?privacy_source=activity_log_top_menu" title="View your activity log">Activity log</a></li>
+            </ul>
+        </div>
+    </footer>
     
 </body>
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Best TODO</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="./code.js">
+    </script>
+        <div id="head">
+            <h1>The best TODO</h1>
+            <h4>Organize yourself!</h4>
+        </div>
+        <div id="adder">
+            <input type="text" id="intext" placeholder="What you wanna do?" onkeydown = "if (event.keyCode == 13)
+            document.getElementById('addbut').click();">
+            <button id="addbut" onClick="addTask()">Add</button>
+       
+        </div>
+        <div id="list">
+           <ul>
+           
+           </ul>
+       
+        </div>
+        
+    </body>
+</html>
