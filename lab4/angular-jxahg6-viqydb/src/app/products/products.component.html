@@ -1,0 +1,24 @@
+<h1> OUR shop</h1>
+<div id="pds">
+<div *ngFor="let product of products">
+
+  <div id="pd">
+  <h3><a [title]="'buy '+product.name " href="https://kaspi.kz/shop/p/watsons-mint-50-sht-108270150/?c=750000000#!/item">
+    {{ product.name }}
+  </a></h3>
+<a id="imgref" href={{product.link}}> <img src={{product.img}}  alt="Girl in a jacket" ></a>
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+  <span><h3>{{product.price}}$</h3></span>
+  <span><strong>{{ product.rating }} /5</strong></span>
+ 
+
+
+  
+  <a id="share" href="whatsapp://send?text=This is WhatsApp sharing example using link"       data-action="share/whatsapp/share"  
+        target="_blank"> Share to WhatsApp </a> 
+
+</div>
+</div>
