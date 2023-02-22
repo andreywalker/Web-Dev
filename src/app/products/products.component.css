@@ -1,0 +1,19 @@
+#pds{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+#pd{
+    width: 300px;
+    margin:50px;
+}
+img{
+    width: 80%; /* or any custom size */
+    height: 80%; 
+    object-fit: contain;
+}
+#imgref{
+    display: flex;
+    height: 300px;
+}
