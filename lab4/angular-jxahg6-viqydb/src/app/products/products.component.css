@@ -3,27 +3,14 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap:wrap;
+    width: 100%;
 }
-#pd{
-    width: 300px;
-    margin:50px;
-    display: flex;
-    flex-direction: column;
-
+h1{
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    margin: auto;
 }
-img{
-    width: 80%; /* or any custom size */
-    height: 80%; 
-    object-fit: contain;
-}
-#imgref{
-    display: flex;
-    height: 300px;
-}
-#share{
-    background-color: #aa8565;
-    border-radius: 10px;
-    color:white;
-    padding:5px;
-    margin-top:20px;
+body{
+    width: 100%;
 }

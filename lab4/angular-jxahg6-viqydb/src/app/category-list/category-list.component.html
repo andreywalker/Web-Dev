@@ -1,0 +1,18 @@
+<h1> OUR shop</h1>
+<div id="cts">
+    <div *ngFor="let category of categories">
+    
+      <div id="ct">
+      <h3><a [title]="category.name" routerLink="/products" ariaCurrentWhenActive="page">
+        {{ category.name }}
+      </a></h3>
+    <a id="imgref" [routerLink]="['/products', category.name]" ariaCurrentWhenActive="page"> <img src={{category.img}}  alt={{category.name}}></a>
+    
+      <p *ngIf="category.description">
+        {{ category.description }}
+      </p>
+    
+    </div>
+    </div>
+</div>
+    

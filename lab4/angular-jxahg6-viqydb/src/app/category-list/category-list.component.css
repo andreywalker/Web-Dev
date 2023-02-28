@@ -1,0 +1,22 @@
+#cts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+#ct{
+    width: 300px;
+    margin:50px;
+    display: flex;
+    flex-direction: column;
+
+}
+img{
+    width: 80%; /* or any custom size */
+    height: 80%; 
+    object-fit: contain;
+}
+#imgref{
+    display: flex;
+    height: 300px;
+}
