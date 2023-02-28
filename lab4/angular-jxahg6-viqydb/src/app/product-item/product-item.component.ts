@@ -12,12 +12,13 @@ export class ProductItemComponent {
   @Input() product!: Product;
 
   products=products;
-  likes=this.product.likes;
+  
+  
   //product2:Product likes=this.product2.likes+1;
   increaseLikes(){
-      this.likes+=1;
+      this.product.likes+=1;
+      console.log(this.product.likes);
   }
   del(){
-    
   }
 }

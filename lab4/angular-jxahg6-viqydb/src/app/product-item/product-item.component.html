@@ -11,7 +11,7 @@
     </p>
     <div id="buts">
     <h3>{{product.price}}$</h3> <h3>{{ product.rating }} /5</h3>  
-    <button ng-click="increaseLike()" type="button" >Like {{product.likes}}</button>
+    <button (click)="increaseLikes()" type="button" >Like {{product.likes}}</button>
     <button ng-click="del()" type="button" >Delete</button>
 </div>
     <a id="share" href={{product.watsLink}}     data-action="share/whatsapp/share"  
