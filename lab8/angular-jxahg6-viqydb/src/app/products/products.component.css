@@ -1,0 +1,16 @@
+#pds{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    width: 100%;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    margin: auto;
+}
+body{
+    width: 100%;
+}

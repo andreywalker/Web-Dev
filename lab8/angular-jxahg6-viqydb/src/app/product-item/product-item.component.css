@@ -1,0 +1,32 @@
+#pd{
+    width: 300px;
+    margin:50px;
+    display: flex;
+    flex-direction: column;
+
+}
+img{
+    width: 80%; /* or any custom size */
+    height: 80%; 
+    object-fit: contain;
+}
+#imgref{
+    display: flex;
+    height: 300px;
+}
+#share{
+    background-color: #aa8565;
+    border-radius: 10px;
+    color:white;
+    padding:5px;
+    margin-top:20px;
+}
+#buts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+button{
+    border-radius: 10px;
+}

@@ -1,0 +1,19 @@
+
+
+<div id="pd" *ngIf="visible==true">
+    <h3><a [title]="'buy '+product.name " href={{product.link}}>
+      {{ product.name }}
+    </a></h3>
+  <a id="imgref" href={{product.link}}> <img src={{product.img}}  alt="Girl in a jacket" ></a>
+  
+    <p *ngIf="product.description">
+      Description: {{ product.description }}
+    </p>
+    <div id="buts">
+    <h3>{{product.price}}$</h3> <h3>{{ product.rating }} /5</h3>  
+    <button (click)="increaseLikes()" type="button" >Like {{product.likes}}</button>
+    <button (click)="del()" type="button" >Delete</button>
+</div>
+    <a id="share" href={{product.watsLink}}     data-action="share/whatsapp/share"  
+          target="_blank"> Share to WhatsApp </a> 
+</div>
